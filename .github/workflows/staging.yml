@@ -17,7 +17,7 @@ jobs:
           username: ${{ secrets.SERVER_USERNAME }}
           private_key: ${{ secrets.PRIVATE_KEY }}
           scp_source: index.html
-          scp_target: ~/thundgb2/public_html/staging/
+          scp_target: /home/thundgb2/public_html/staging
           before_script: |
             df -h
           after_script: |
